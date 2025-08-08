@@ -1,0 +1,531 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+
+  }
+  @media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .heroImg {
+    width: 400px;
+  }
+  .name, .title {
+    font-size: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .aboutMe {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .textContainer {
+    align-items: center;
+    margin: 0rem 5rem;
+    gap: 1rem;
+  }
+  .aboutName, .aboutTitle {
+    font-size: 2rem;
+  }
+  .light {
+    width: 60px;
+  }
+  .aboutMeImg {
+    width: 400px;
+  }
+  .works {
+    padding: 0;
+  }
+  .worksContainer {
+    padding: 5rem 0rem;
+    gap: 3rem;
+  }
+  .projectTitle {
+    margin-left: 1rem;
+  }
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contactContainer {
+    margin: 10rem 5rem;
+    gap: 2rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+
+}
+.hero {
+  display: flex;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+.arrow {
+  position: absolute;
+  transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+.heroSub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 3rem;
+  color: #eeeeee;
+}
+
+.title {
+  font-size: 4rem;
+  color: #00adb5;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.hireMe {
+  background-color: #00adb5;
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cv {
+  background-color: rgba(57, 62, 70, 0.75);
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(4px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    max-width: 1200px;
+  }
+
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+/* From Uiverse.io by chethan025 */ 
+.card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: rgb(41, 41, 82);
+  box-shadow: 0px 145px 58px rgba(233, 182, 27, 0.01),
+    0px 82px 49px rgba(233, 182, 27, 0.05), 
+    0px 36px 36px rgba(233, 182, 27, 0.09), 
+    0px 9px 20px rgba(233, 182, 27, 0.1), 
+    0px 0px 0px rgba(233, 182, 27, 0.1);
+  width: 70px;
+  height: 90px;
+  margin: 40px;
+  border-radius: 28px;
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 28px;
+  color: #41157300;
+  letter-spacing: 0.1em;
+  transition: 300ms ease-in;
+}
+
+.card:hover {
+  background: rgba(233, 182, 27, 1);
+  box-shadow: 0px 112px 45px rgba(65, 21, 115, 0.01), 
+    0px 63px 38px rgba(65, 21, 115, 0.05), 
+    0px 28px 28px rgba(65, 21, 115, 0.09), 
+    0px 7px 15px rgba(65, 21, 115, 0.1), 
+    0px 0px 0px rgba(65, 21, 115, 0.1);
+  color: #FFFFFF;
+}
+
+.svg {
+  opacity: 80%;
+}
+
+.text {
+  margin: auto;
+  position: absolute;
+}
+/* From Uiverse.io by satyamchaudharydev */ 
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+hr{
+    opacity: 10%;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #000000;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+.navigation a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.navigation a:hover {
+    color: #00adb5;
+}
+
+hr{
+    opacity: 10%;
+}
+
+
+/* From Uiverse.io by sameer_4340 */ 
+.loading-container {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, #555, transparent);
+  animation: ground-move 2s linear infinite;
+}
+
+@keyframes ground-move {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100px;
+  height: 80px;
+  animation: crawl 2s linear infinite;
+}
+
+@keyframes crawl {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: head-bob 0.5s ease-in-out infinite alternate;
+  box-shadow: inset 0 -2px 0 #ccc;
+}
+
+@keyframes head-bob {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.eye {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 50%;
+  top: 11px;
+}
+
+.eye.left {
+  left: 10px;
+}
+.eye.right {
+  left: 20px;
+}
+
+.mouth {
+  position: absolute;
+  width: 12px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 0 0 5px 5px;
+  top: 18px;
+  left: 11px;
+  animation: mouth-talk 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes mouth-talk {
+  0% {
+    height: 3px;
+  }
+  100% {
+    height: 6px;
+  }
+}
+
+.body {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  width: 20px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 -2px 0 #ccc;
+}
+
+.arm {
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  background-color: #fff;
+  top: 30px;
+  border-radius: 50px;
+  box-shadow: inset 0 -2px 0 #ccc;
+}
+
+.arm.left {
+  left: 25px;
+  transform-origin: top center;
+  animation: arm-left 1s ease-in-out infinite;
+}
+
+.arm.right {
+  left: 55px;
+  transform-origin: top center;
+  animation: arm-right 1s ease-in-out infinite;
+}
+
+@keyframes arm-left {
+  0%,
+  100% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes arm-right {
+  0%,
+  100% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+.leg {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background-color: #fff;
+  top: 60px;
+  border-radius: 50px;
+  box-shadow: inset 0 -2px 0 #ccc;
+}
+
+.leg.left {
+  left: 35px;
+  transform-origin: top center;
+  animation: leg-left 1s ease-in-out infinite;
+}
+
+.leg.right {
+  left: 45px;
+  transform-origin: top center;
+  animation: leg-right 1s ease-in-out infinite;
+}
+
+@keyframes leg-left {
+  0%,
+  100% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes leg-right {
+  0%,
+  100% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    content: ".";
+  }
+  40% {
+    content: "..";
+  }
+  60%,
+  100% {
+    content: "...";
+  }
+}
+body {
+  background-color: #222831;
+}
+
+/* From Uiverse.io by asgardOP */ 
+.ul {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  list-style: none;
+}
+.li {
+  margin-bottom: 0px;
+}
+.button {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 30px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 11px;
+  text-align: center;
+  transition: 0.1s;
+  z-index: 1;
+  background-color: #00adb5;
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.p.p {
+  z-index: 2;
+  
+  text-decoration: none;
+  color: #ffffff;
+
+}
+.button1:hover {
+  color: rgb(201, 6, 6);
+  text-align: center;
+}
+.but
+.button:hover {
+  color: rgb(50, 0, 131);
+  text-align: center;
+}
+.button:hover::before {
+  transform: rotate(0deg);
+  width: 100%;
+  height: 40px;
+  top: 2px;
+  border-radius: 3px;
+  background-color: rgb(10, 134, 184);
+}
+
+
+.button:active::before {
+  background-color: rgb(9, 125, 160);
+}
+.ul1{
+  display: flex
+;
+}
